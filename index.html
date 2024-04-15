@@ -178,9 +178,9 @@
 					let map = L.map('map', {
 						layers: [osm],
 						tap: false,
-						center: new L.LatLng(19.3945, -99.1515),
+						center: new L.LatLng(19.3445, -99.1515),
 						zoom: 11,
-						minZoom: 5,
+						minZoom: 6,
 						fullscreenControl: true,
 						fullscreenControlOptions: {
 							title: 'Hide FullScreen',
@@ -495,7 +495,7 @@
 					L.control.resetView({
         			position: "topleft",
         			title: "Return zoom",
-       				latlng: L.latLng([19.3945, -99.1515]),
+       				latlng: L.latLng([19.3445, -99.1515]),
         			zoom: 11,
    					}).addTo(map);
 					// SEARCH CONTROL //
