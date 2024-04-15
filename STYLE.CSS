@@ -1,0 +1,162 @@
+/*CUERPO*/
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #000000;
+    margin: 0px;
+}
+/*PANEL SUPERIOR*/
+.head {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.head {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.head {
+    padding: 18px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 12.5px;
+    background: #ffffff;
+    justify-content: center;
+}
+/*BOTONES PANEL SUPERIOR*/
+.boton {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    justify-content: center;
+}
+.boton:hover {
+    color: #757575;
+}
+/*MARCO MAPA*/
+.mapa {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+.mapa {
+    padding: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+}
+.mapa {
+    padding: 18px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 12.5px;
+    background: #000000;
+    justify-content: left;
+}
+/*METODOLOGÍA*/
+.metodology {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.metodology {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.metodology {
+    padding: px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 12.5px;
+    background: #c6c6c6;
+    justify-content: center;
+}
+/*ESTADISTICA*/
+.statistics {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.statistics {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.statistics {
+    padding: px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 12.5px;
+    background: #c6c6c6;
+    justify-content: center;
+}
+/*CREDITOS*/
+.credits {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.credits {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.credits {
+    padding: px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 12.5px;
+    background: #ffffff;
+    justify-content: center;
+}
+/*PARRAFO 1 Y BOTON 1*/
+.paragraph {
+    padding: 10px;
+    font-size: 12.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #000000;
+    font-weight: bolder;
+    justify-content: center;
+}
+/*PARRAFO 1 Y BOTON 1*/
+.btn {
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline;
+    color: #000000;
+    text-decoration: none;
+    justify-content: center;
+}
+.btn:hover {
+    color: #757575;
+}
+.btn-home {
+    display: flex;
+}

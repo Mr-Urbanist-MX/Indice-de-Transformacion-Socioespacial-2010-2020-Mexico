@@ -1,0 +1,249 @@
+<!--TIPO DE DOCUMENTO-->
+<!DOCTYPE html>
+<!--ENCABEZADO PAGINA WEB-->
+<html lang="en">
+    <head>
+        <title>ÍNDICE DE TRANSFORMACIÓN SOCIOESPACIAL 2010-2020</title>
+        <!--META-->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE-edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINK DE REFERENCIA-->
+            <link rel="stylesheet" href="STYLE.CSS">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.css" />
+        <!--SCRIPT-->
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+            <script src="/js/angular-leaflet-directive.min.js"></script>
+            <script src="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.js"></script>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            <style type="text/css">
+                #map {
+                    margin: auto;
+                    width: 100%;
+                    min-height: 800px;
+                    max-height: 900px;
+                    height: 100%;
+                }
+                .info {
+                    padding: 15px;
+                    font: sans-serif;
+                    border: 1px #000000;
+                    background: #c6c6c6; 
+                }
+                .info h3 {
+                    margin: 8.5px;
+                    color: #000000;
+                }
+            </style>
+    </head>
+<!--ESTRUCTURA PAGINA WEB-->
+    <body>
+    <!--BARRA DE BOTONES INICIALES-->
+        <section class="head">
+                <a class="boton" href="#">MR URBANIST MX</a>
+                <a class="boton" href="#metodology">METODOLOGÍA (CONSTRUCCIÓN DEL ITSE)</a>
+                <a class="boton" href="#statistics">ESTADÍSTICAS PRINCIPALES</a>
+                <a class="boton" href="#map">VISUALIZADOR (GEOPORTAL)</a>
+                <a class="boton" href="#credits" >ACERCA DE</a>
+        </section>
+    <!--SECCION CARTOGRAFIA-->
+        <section class="metodology" id="metodology">
+                <p class="paragraph">
+                    METODOLOGÍA (CONSTRUCCIÓN DEL ÍNDICE DE TRANSFORMACIÓN SOCIOESPACIAL)</br>
+                    <br></br>
+                    Trabajamos con softwares especializados en Sistemas de Información Geográfica y Percepción Remota, como:
+                    <br></br>
+                    <br></br>
+                    <a href="https://www.esri.com/es-es/home" class="btn">ArcGIS Desktop/Pro</a>
+                    <a href="https://qgis.org/es/site/" class="btn">QGIS (Open Source)</a>
+                    <a href="https://www.google.es/intl/es/earth/index.html" class="btn">Google Earth</a>
+                    <a href="https://earth.esa.int/eogateway/tools/snap" class="btn">ESA SNAP Desktop</a>
+                    <a href="https://www.spacesyntax.online/" class="btn">DephtMap X (Space Syntax)</a>
+                    <a href="https://www.autodesk.mx/" class="btn">AutoCAD</a>
+                    <br></br>
+                </p>
+        </section>
+    <!--SECCION ESTADISTICA-->
+    <section class="statistics" id="statistics">
+        <p class="paragraph">
+            SERVICIOS ESTADÍSTICOS</br>
+            <br></br>
+            En el siguiente apartado se encontrará la cartografía referente a "Estadística" así como información complementaría del sitio.
+            <br></br>
+            <br></br>
+            <a href="#" class="btn">CARTOGRAFÍA "LOCALIZACIONES"</a>
+            <a href="#" class="btn">CARTOGRAFÍA "BOYAS / ANCLAJES"</a>
+            <a href="#" class="btn">CARTOGRAFÍA "LOCALIZACIÓN DE PARÁMETROS"</a>
+            <a href="#" class="btn">CARTOGRAFÍA "POLÍGONOS CNIH"</a>
+            <a href="https://estadistica.sycec.mx/login" class="btn">SITIO ESTADÍSTICA</a>
+            <br></br>
+        </p>
+</section>
+    <!--VISUALIZADOR DE CAPAS-->
+        <section class="mapa">
+            <div id="map"></div>
+            <!--ARCHIVOS GEOJSON-->
+                <!--POLIGONOS-->
+                <script type="text/javascript" src="0GU3.js"></script>
+                <script type="text/javascript" src="0GU2.js"></script>
+                <script type="text/javascript" src="0GU1.js"></script>
+                <script type="text/javascript" src="0SC.js"></script>
+                <script type="text/javascript" src="0DU1.js"></script>
+                <script type="text/javascript" src="0DU2.js"></script>
+                <script type="text/javascript" src="0NA.js"></script>
+            <!--BASEMAPS-->
+                <script>
+                    const map = L.map('map').setView([19.3945, -99.1515], 11);
+                        osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', { foo: 'bar', attribution: '<a></a>'}).addTo(map);
+                        hdm = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map)
+                        black = L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}').addTo(map)
+                    const basemaps = {
+                        "OpenStreetMaps Standard": osm,
+                        "Humanitarian (OSM)": hdm,
+                        "Gray Dark (ESRI)": black,
+                    };
+                    Escala = L.control.scale().addTo(map);
+                    map.attributionControl.addAttribution('© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | , © <a href="https://www.hotosm.org/">Humanitarian (OSM)</a> | , © <a href="https://www.esri.com/es-es/home">Gray Map (ESRI)</a> | , © <a href="">Mr Urbanist MX</a> | contributors')
+                </script>
+            <!--CARTOGRAFIA GEOJSON (CAPAS)-->
+                <!--POLIGONOS (CAPAS)-->
+                <script>
+                GU3 = L.geoJson(gu_3, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#da5746',
+                                                                fillColor: '#b03d39',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                GU2 = L.geoJson(gu_2, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#b03d39',
+                                                                fillColor: '#da5746',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                GU1 = L.geoJson(gu_1, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#b03d39',
+                                                                fillColor: '#da5746',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                SC = L.geoJson(sc_0, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#bf9876',
+                                                                fillColor: '#fff3ad',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                DU1 = L.geoJson(du_1, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#39236d',
+                                                                fillColor: '#a7c4ff',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                DU2 = L.geoJson(du_2, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#39236d',
+                                                                fillColor: '#5470ca',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+
+                NA = L.geoJson(na_0, { style: function (feature){
+                                                            return {
+                                                                weight: 1,
+                                                                opacity: 10,
+                                                                dashArray: 2,
+                                                                fillOpacity: 0.85,
+                                                                color: '#000000',
+                                                                fillColor: '#ffffff',
+                                                            };}
+                                                            }).bindPopup(function (layer){return layer.feature.properties.CLAS_GD;}).addTo(map);
+                </script>
+                </script>
+                <!--TITULO (MAPA)-->
+                <script>
+                    const info = L.control();
+                    info.onAdd = function (map) {
+                        this._div = L.DomUtil.create('div', 'info');
+                        this.update();
+                        return this._div;
+                    };
+                        info.update = function (props) {
+                            this._div.innerHTML = `<h3>ÍNDICE DE TRANSFORMACIÓN SOCIO ESPACIAL (ITSE 2010-2020)</h3>`;
+                    };
+                    info.addTo(map);
+                </script>
+                <!--ACTIVAR CAPAS-->
+                <script>                  
+                    const overlays = {
+                        "Gentrificación Urbana Fuerte": GU3,
+                        "Gentrificación Urbana Media": GU2,
+                        "Gentrificación Urbana Ligera": GU1,
+                        "Sin Cambios": SC,
+                        "Declinación Urbana Ligera": DU1,
+                        "Declinación Urbana Media": DU2,
+                        "No Aplica": NA,
+                    };
+                    const Paneldecapas = L.control.layers(basemaps, overlays, {
+                                                position: 'topright',
+                                                collapsed: false,
+                    }).addTo(map);
+                </script>
+                <!--LEYENDA (SIMBOLOGIA)-->
+                <script>
+                </script>
+        </section>
+    <!--SECCION ACERCA DE NOSOTROS-->
+        <section class="credits" id="credits">
+                <p class="paragraph">
+                    ACERCA DE</br>
+
+                    | MR URBANIST MX|</br>
+                    <br></br>
+                    <a href="https://www.facebook.com/MrUrbanistMX" class="btn">FACEBOOK</a>
+                    <a href="https://x.com/Mr_Urbanist_MX?s=20" class="btn">TWITTER (X)</a>
+                    <a href="https://www.instagram.com/mr_urbanist_mx" class="btn">INSTAGRAM</a>
+                    <a href="https://www.tiktok.com/@mr_urbanist_mx" class="btn">TIK TOK</a>
+                    <a class="btn">CORREO: mr.urbanist.mx@gmail.com</a>
+                    <br></br>
+                    <br></br>
+                    | © Leaflet | © OpenStreetMap | © Carto | © ESRI | Servidores WEB Map Server (WMS) </br>
+                    <br></br>
+                    | © Mr Urbanist MX (Urbanista Diego Armando Salazar González) | Desarrollador del Geovisor / Cartografía </br>
+                    <br></br>
+                    Todos los derechos reservados</br>
+                    Año 2024</br>
+                </p>
+        </section>    
+    </body>
+</html>
