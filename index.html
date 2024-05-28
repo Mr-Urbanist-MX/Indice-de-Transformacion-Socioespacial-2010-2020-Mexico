@@ -226,6 +226,9 @@
 					let GU3 = L.geoJson(gu_3, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 				                        color: '#894444',
 				                        fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -259,6 +262,9 @@
 					let GU2 = L.geoJson(gu_2, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 				                        color: '#cd6666',
 				                        fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -292,6 +298,9 @@
 					let GU1 = L.geoJson(gu_1, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 							color: '#ffbebe',
 							fillColor: '#da5746',
 						};}}).bindPopup(function (layer){
@@ -325,6 +334,9 @@
 					let SC = L.geoJson(sc_0, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 							color: '#ffffbe',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -358,6 +370,9 @@
 					let DU1 = L.geoJson(du_1, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 							color: '#bed2ff',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -391,6 +406,9 @@
 					let DU2 = L.geoJson(du_2, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 							color: '#7a8ef5',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -424,6 +442,9 @@
 					let DU3 = L.geoJson(du_3, {style: function (feature){
 						return {
 							weight: 1,
+							opacity: 0.25,
+							dashArray: 5,
+							fillOpacity: 0.25,
 							color: '#002673',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -503,7 +524,7 @@
 							"Sin Cambios": SC,
 							"Declinación Urbana Ligera": DU1,
 							"Declinación Urbana Media": DU2,
-							"Declinación Urbana Media": DU3,
+							"Declinación Urbana Fuerte": DU3,
 							"No Aplica": NA,
 						};
 					let layerControl = L.control.layers(baseLayers, overlays, {collapsed: false,}).addTo(map);
