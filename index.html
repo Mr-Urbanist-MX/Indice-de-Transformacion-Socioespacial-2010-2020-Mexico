@@ -179,8 +179,8 @@
 					let map = L.map('map', {
 						layers: [osm],
 						tap: false,
-						center: new L.LatLng(19.3445, -99.1515),
-						zoom: 11,
+						center: new L.LatLng(19.50, -99.15),
+						zoom: 10,
 						minZoom: 6,
 						fullscreenControl: true,
 						fullscreenControlOptions: {
@@ -217,20 +217,20 @@
 						startTab: 'tab-1'
 					}).addTo(map);
 					// ESCALA //
-					let Escala = L.control.scale({ position: 'bottomright'}).addTo(map);
+					let Escala = L.control.scale({ position: 'bottomleft'}).addTo(map);
 					// MINIBASEMAP //
 					let MMUrl='http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
 					let MMap = new L.TileLayer(MMUrl, {minZoom: 0, maxZoom: 10,});
-					let miniMap = new L.Control.MiniMap(MMap, { toggleDisplay: true, position: 'bottomleft'}).addTo(map);					
+					let miniMap = new L.Control.MiniMap(MMap, { toggleDisplay: true, position: 'bottomright'}).addTo(map);					
 					// CARTOGRAFIA GEOJSON (CAPAS) //
 					// POLIGONOS (CAPAS) //
 					let GU3 = L.geoJson(gu_3, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
-				            color: '#ffffff',
-				            fillColor: '#894444',
+							opacity: 0.9,
+							fillOpacity: 0.9,
+				            		color: '#ffffff',
+				            		fillColor: '#894444',
 						};}}).bindPopup(function (layer){
 						return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -262,10 +262,10 @@
 					let GU2 = L.geoJson(gu_2, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
-				            color: '#ffffff',
-				            fillColor: '#cd6666',
+							opacity: 0.9,
+							fillOpacity: 0.9,
+				            		color: '#ffffff',
+				            		fillColor: '#cd6666',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -297,8 +297,8 @@
 					let GU1 = L.geoJson(gu_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: '#ffffff',
 							fillColor: '#ffbebe',
 						};}}).bindPopup(function (layer){
@@ -332,8 +332,8 @@
 					let SC = L.geoJson(sc_0, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: '#ffffff',
 							fillColor: '#ffffbe',
 						};}}).bindPopup(function (layer){
@@ -367,8 +367,8 @@
 					let DU1 = L.geoJson(du_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: '#ffffff',
 							fillColor: '#bed2ff',
 						};}}).bindPopup(function (layer){
@@ -402,8 +402,8 @@
 					let DU2 = L.geoJson(du_2, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: '#ffffff',
 							fillColor: '#7a8ef5',
 						};}}).bindPopup(function (layer){
@@ -437,8 +437,8 @@
 					let DU3 = L.geoJson(du_3, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: 'ffffff',
 							fillColor: '#002673',
 						};}}).bindPopup(function (layer){
@@ -472,8 +472,8 @@
 					let NA = L.geoJson(na_0, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.75,
-							fillOpacity: 0.75,
+							opacity: 0.9,
+							fillOpacity: 0.9,
 							color: '#000000',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
@@ -523,10 +523,10 @@
 					let layerControl = L.control.layers(baseLayers, overlays, {collapsed: false,}).addTo(map);
 					// RESET VIEW (REGRESAR VISTA IN INICIAL) //
 					L.control.resetView({
-        			position: "topleft",
-        			title: "Return zoom",
-       				latlng: L.latLng([19.3445, -99.1515]),
-        			zoom: 11,
+	        			position: "topleft",
+	        			title: "Return zoom",
+	       				latlng: L.latLng([19.50, -99.15]),
+	        			zoom: 10,
    					}).addTo(map);
 					// SEARCH CONTROL //
 					//let searchControl = new L.Control.Search({
