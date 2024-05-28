@@ -6,7 +6,7 @@
 		<!--TITULO (PESTAÑA)-->
 			<title>ÍNDICE DE TRANSFORMACIÓN SOCIOESPACIAL 2010-2020</title>
 		<!--META-->
-			<meta charset="UTF-8" content="IE-edge" content="width=device-width, initial-scale=1.0" http-equiv="X-UA-Compatible" name="viewport">
+			<meta charset="utf-8">
 		<!--LINK DE REFERENCIA-->
 			<link type="text/css" rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css"></script>
 			<link type="text/css" rel="stylesheet" href="Control.FullScreen.css"></script> <!--PLUGIN BY 'BRUNO B' - GITHUB:'https://github.com/brunob/leaflet.fullscreen'-->
@@ -227,11 +227,10 @@
 					let GU3 = L.geoJson(gu_3, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-				                        color: '#894444',
-				                        fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+				            color: '#ffffff',
+				            fillColor: '#894444',
 						};}}).bindPopup(function (layer){
 						return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -263,11 +262,10 @@
 					let GU2 = L.geoJson(gu_2, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-				                        color: '#cd6666',
-				                        fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+				            color: '#ffffff',
+				            fillColor: '#cd6666',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -299,11 +297,10 @@
 					let GU1 = L.geoJson(gu_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-							color: '#ffbebe',
-							fillColor: '#da5746',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+							color: '#ffffff',
+							fillColor: '#ffbebe',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -335,11 +332,10 @@
 					let SC = L.geoJson(sc_0, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-							color: '#ffffbe',
-							fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+							color: '#ffffff',
+							fillColor: '#ffffbe',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -371,11 +367,10 @@
 					let DU1 = L.geoJson(du_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-							color: '#bed2ff',
-							fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+							color: '#ffffff',
+							fillColor: '#bed2ff',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -407,11 +402,10 @@
 					let DU2 = L.geoJson(du_2, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-							color: '#7a8ef5',
-							fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+							color: '#ffffff',
+							fillColor: '#7a8ef5',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -443,11 +437,10 @@
 					let DU3 = L.geoJson(du_3, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 0.25,
-							dashArray: 5,
-							fillOpacity: 0.25,
-							color: '#002673',
-							fillColor: '#ffffff',
+							opacity: 0.75,
+							fillOpacity: 0.75,
+							color: 'ffffff',
+							fillColor: '#002673',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -479,9 +472,8 @@
 					let NA = L.geoJson(na_0, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 10,
-							dashArray: 2,
-							fillOpacity: 0.85,
+							opacity: 0.75,
+							fillOpacity: 0.75,
 							color: '#000000',
 							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
