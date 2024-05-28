@@ -226,11 +226,8 @@
 					let GU3 = L.geoJson(gu_3, {style: function (feature){
 						return {
 							weight: 1,
-                            opacity: 10,
-                            dashArray: 2,
-                            fillOpacity: 0.85,
-                            color: '#da5746',
-                            fillColor: '#b03d39',
+				                        color: '#894444',
+				                        fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
 						return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -262,11 +259,8 @@
 					let GU2 = L.geoJson(gu_2, {style: function (feature){
 						return {
 							weight: 1,
-                            opacity: 10,
-                            dashArray: 2,
-                            fillOpacity: 0.85,
-                            color: '#b03d39',
-                            fillColor: '#da5746',
+				                        color: '#cd6666',
+				                        fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -298,10 +292,7 @@
 					let GU1 = L.geoJson(gu_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 10,
-							dashArray: 2,
-							fillOpacity: 0.85,
-							color: '#b03d39',
+							color: '#ffbebe',
 							fillColor: '#da5746',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
@@ -334,11 +325,8 @@
 					let SC = L.geoJson(sc_0, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 10,
-							dashArray: 2,
-							fillOpacity: 0.85,
-							color: '#bf9876',
-							fillColor: '#fff3ad',
+							color: '#ffffbe',
+							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -370,11 +358,8 @@
 					let DU1 = L.geoJson(du_1, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 10,
-							dashArray: 2,
-							fillOpacity: 0.85,
-							color: '#39236d',
-							fillColor: '#a7c4ff',
+							color: '#bed2ff',
+							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -406,11 +391,41 @@
 					let DU2 = L.geoJson(du_2, {style: function (feature){
 						return {
 							weight: 1,
-							opacity: 10,
-							dashArray: 2,
-							fillOpacity: 0.85,
-							color: '#39236d',
-							fillColor: '#5470ca',
+							color: '#7a8ef5',
+							fillColor: '#ffffff',
+						};}}).bindPopup(function (layer){
+							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
+							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
+							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
+							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
+							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
+							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
+							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
+							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
+							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
+							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
+							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
+							   "</td></tr></table>"
+						}).bindTooltip(function (layer){
+							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
+							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
+							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
+							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
+							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
+							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
+							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
+							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
+							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
+							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
+							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
+							   "</td></tr></table>"
+						}).addTo(map);
+
+					let DU3 = L.geoJson(du_3, {style: function (feature){
+						return {
+							weight: 1,
+							color: '#002673',
+							fillColor: '#ffffff',
 						};}}).bindPopup(function (layer){
 							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
 							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
@@ -488,6 +503,7 @@
 							"Sin Cambios": SC,
 							"Declinación Urbana Ligera": DU1,
 							"Declinación Urbana Media": DU2,
+							"Declinación Urbana Media": DU3,
 							"No Aplica": NA,
 						};
 					let layerControl = L.control.layers(baseLayers, overlays, {collapsed: false,}).addTo(map);
