@@ -5,43 +5,40 @@
 	<head>
 		<!--TITULO (PESTAÑA)-->
 			<title>ÍNDICE DE TRANSFORMACIÓN SOCIOESPACIAL 2010-2020</title>
+			<link type="image/png" rel='shortcut icon' href='./Icon/Icon.ITSE.png'></link>
 		<!--META-->
 			<meta charset="utf-8">
 		<!--LINK DE REFERENCIA-->
 			<link type="text/css" rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css"></script>
-			<link type="text/css" rel="stylesheet" href="Control.FullScreen.css"></script> <!--PLUGIN BY 'BRUNO B' - GITHUB:'https://github.com/brunob/leaflet.fullscreen'-->
-			<link type="text/css" rel="stylesheet" href="Control.MiniMap.css"></script> <!--PLUGIN BY 'ROBERT NORDAN' - GITHUB:'https://github.com/Norkart/Leaflet-MiniMap'-->
-			<link type="text/css" rel="stylesheet" href="Control.ResetView.css"></script> <!--PLUGIN BY 'WONG HOI SING EDISON' - GITHUB:'https://github.com/drustack/Leaflet.ResetView'-->
-			<link type="text/css" rel="stylesheet" href="Control.Search.css"></script> <!--PLUGIN BY 'STEFANO CUDINI' - GITHUB:'https://github.com/stefanocudini/leaflet-search'-->
-			<link type="text/css" rel="stylesheet" href="Control.SidePanel.css"></script> <!--PLUGIN BY 'MAXWELL ILAI' - GITHUB:'https://github.com/maxwell-ilai/Leaflet.SidePanel'-->
-			<link type="text/css" rel="stylesheet" href="Control.Style.css"></script> <!--ELABORADO POR 'MR_URBANIST_MX: DIEGO ARMANDO SALAZAR GONZÁLEZ'-->
-			<link type="text/css" rel="stylesheet" href="Control.Style.Map.css"></script> <!--ELABORADO POR 'MR_URBANIST_MX: DIEGO ARMANDO SALAZAR GONZÁLEZ'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.FullScreen.css"></script> <!--PLUGIN BY 'BRUNO B' - GITHUB:'https://github.com/brunob/leaflet.fullscreen'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.MiniMap.css"></script> <!--PLUGIN BY 'ROBERT NORDAN' - GITHUB:'https://github.com/Norkart/Leaflet-MiniMap'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.ResetView.css"></script> <!--PLUGIN BY 'WONG HOI SING EDISON' - GITHUB:'https://github.com/drustack/Leaflet.ResetView'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.Search.css"></script> <!--PLUGIN BY 'STEFANO CUDINI' - GITHUB:'https://github.com/stefanocudini/leaflet-search'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.SidePanel.css"></script> <!--PLUGIN BY 'MAXWELL ILAI' - GITHUB:'https://github.com/maxwell-ilai/Leaflet.SidePanel'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.Style.css"></script> <!--ELABORADO POR 'MR_URBANIST_MX: DIEGO ARMANDO SALAZAR GONZÁLEZ'-->
+			<link type="text/css" rel="stylesheet" href="./Control/Control.Style.Map.css"></script> <!--ELABORADO POR 'MR_URBANIST_MX: DIEGO ARMANDO SALAZAR GONZÁLEZ'-->
 		<!--SCRIPT-->
 			<script type="text/javascript" src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
-			<script type="text/javascript" src="Control.FullScreen.js"></script> <!--PLUGIN BY 'BRUNO B' - GITHUB:'https://github.com/brunob/leaflet.fullscreen'-->
-			<script type="text/javascript" src="Control.MiniMap.js"></script> <!--PLUGIN BY 'ROBERT NORDAN' - GITHUB:'https://github.com/Norkart/Leaflet-MiniMap'-->
-			<script type="text/javascript" src="Control.ResetView.js"></script> <!--PLUGIN BY 'WONG HOI SING EDISON' - GITHUB:'https://github.com/drustack/Leaflet.ResetView'-->
-			<script type="text/javascript" src="Control.Search.js"></script> <!--PLUGIN BY 'STEFANO CUDINI' - GITHUB:'https://github.com/stefanocudini/leaflet-search'-->
-			<script type="text/javascript" src="Control.SidePanel.js"></script> <!--PLUGIN BY 'MAXWELL ILAI' - GITHUB:'https://github.com/maxwell-ilai/Leaflet.SidePanel'-->
+			<script type="text/javascript" src="./Control/Control.FullScreen.js"></script> <!--PLUGIN BY 'BRUNO B' - GITHUB:'https://github.com/brunob/leaflet.fullscreen'-->
+			<script type="text/javascript" src="./Control/Control.MiniMap.js"></script> <!--PLUGIN BY 'ROBERT NORDAN' - GITHUB:'https://github.com/Norkart/Leaflet-MiniMap'-->
+			<script type="text/javascript" src="./Control/Control.ResetView.js"></script> <!--PLUGIN BY 'WONG HOI SING EDISON' - GITHUB:'https://github.com/drustack/Leaflet.ResetView'-->
+			<script type="text/javascript" src="./Control/Control.Search.js"></script> <!--PLUGIN BY 'STEFANO CUDINI' - GITHUB:'https://github.com/stefanocudini/leaflet-search'-->
+			<script type="text/javascript" src="./Control/Control.SidePanel.js"></script> <!--PLUGIN BY 'MAXWELL ILAI' - GITHUB:'https://github.com/maxwell-ilai/Leaflet.SidePanel'-->
 		<!--ARCHIVOS CARTOGRAFÍA GEOJSON-->
 			<!--POLIGONOS-->
-			<script type="text/javascript" src="0DU1.js"></script>
-			<script type="text/javascript" src="0DU2.js"></script>
-			<script type="text/javascript" src="0DU3.js"></script>
-			<script type="text/javascript" src="0GU1.js"></script>
-			<script type="text/javascript" src="0GU2.js"></script>
-			<script type="text/javascript" src="0GU3.js"></script>
-			<script type="text/javascript" src="0NA.js"></script>
-			<script type="text/javascript" src="0SC.js"></script>
-			<script type="text/javascript" src="0_M_ZM.js"></script>
-			<script type="text/javascript" src="0_ZM.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0DU1.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0DU2.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0DU3.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0GU1.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0GU2.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0GU3.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0NA.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0SC.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0_M_ZM.js"></script>
+			<script type="text/javascript" src="./GeoJSON/0_ZM.js"></script>
 	</head>
 	<!--ESTRUCTURA PAGINA WEB-->
 	<body>
-		<!--BARRA DE BOTONES INICIALES-->
-		<section class="head">
-			  <a class="boton">ÍNDICE DE TRANSFORMACIÓN SOCIOESPACIAL 2010-2020</a>
-		</section>
 		<!--VISUALIZADOR DE CAPAS-->
 		<section class="mapa">
 			<!--MAPA-->
@@ -167,390 +164,7 @@
 						</button>
 					</div>
 				</div>
-				<script>
-					// BASEMAPS //
-					let esrigray = L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-						attribution: '© <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> | © <a href="https://www.hotosm.org/">Humanitarian</a> | © <a href="https://www.esri.com/es-es/home">ESRI</a> | © <a href="">Mr Urbanist MX</a> | contributors'});
-					let osm = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-						attribution: '© <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> | © <a href="https://www.hotosm.org/">Humanitarian</a> | © <a href="https://www.esri.com/es-es/home">ESRI</a> | © <a href="">Mr Urbanist MX</a> | contributors'});
-					let hdm = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-						attribution: '© <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> | © <a href="https://www.hotosm.org/">Humanitarian</a> | © <a href="https://www.esri.com/es-es/home">ESRI</a> | © <a href="">Mr Urbanist MX</a> | contributors'});
-					let esrisat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-						attribution: '© <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> | © <a href="https://www.hotosm.org/">Humanitarian</a> | © <a href="https://www.esri.com/es-es/home">ESRI</a> | © <a href="">Mr Urbanist MX</a> | contributors'});
-					//  CONFIGURACIÓN LIENZO //
-					let map = L.map('map', {
-						layers: [osm],
-						tap: false,
-						center: new L.LatLng(19.50, -99.15),
-						zoom: 10,
-						minZoom: 6,
-						fullscreenControl: true,
-						fullscreenControlOptions: {
-							title: 'Hide FullScreen',
-							titleCancel: 'Show Fullscreen out'
-						}
-					});
-					map.on('Hide Fullscreen',
-						function () {
-							if (window.console) window.console.log('Hide Fullscreen');
-					});
-					map.on('Show Fullscreen',
-						function () {
-							if (window.console) window.console.log('Show Fullscreen');
-					});
-					let toggleFullscreen = function () {
-					map.toggleFullscreen();
-					};
-					// TITULO //
-					let info = L.control();
-						info.onAdd = function (map) {
-								this._div = L.DomUtil.create('div', 'info');
-								this.update();
-							return this._div;
-							};
-							info.update = function (props) {
-								this._div.innerHTML = `<h3>VISUALIZADOR DE CAPAS</h3>`;
-							};
-							info.addTo(map);
-					// SIDEPANEL CARACTERISITCAS//
-					let sidepanelLeft = L.control.sidepanel('mySidepanelLeft', {
-						tabsPosition: 'left',
-						darkMode: true,
-						startTab: 'tab-1'
-					}).addTo(map);
-					// ESCALA //
-					let Escala = L.control.scale({ position: 'bottomleft'}).addTo(map);
-					// MINIBASEMAP //
-					let MMUrl='http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
-					let MMap = new L.TileLayer(MMUrl, {minZoom: 0, maxZoom: 10,});
-					let miniMap = new L.Control.MiniMap(MMap, { toggleDisplay: true, position: 'bottomright'}).addTo(map);					
-					// CARTOGRAFIA GEOJSON (CAPAS) //
-					// POLIGONOS (CAPAS) //
-					let GU3 = L.geoJson(gu_3, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-				            		color: '#ffffff',
-				            		fillColor: '#894444',
-						};}}).bindPopup(function (layer){
-						return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let GU2 = L.geoJson(gu_2, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-				            		color: '#ffffff',
-				            		fillColor: '#cd6666',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let GU1 = L.geoJson(gu_1, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: '#ffffff',
-							fillColor: '#ffbebe',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let SC = L.geoJson(sc_0, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: '#ffffff',
-							fillColor: '#ffffbe',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let DU1 = L.geoJson(du_1, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: '#ffffff',
-							fillColor: '#bed2ff',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let DU2 = L.geoJson(du_2, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: '#ffffff',
-							fillColor: '#7a8ef5',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let DU3 = L.geoJson(du_3, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: 'ffffff',
-							fillColor: '#002673',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-
-					let NA = L.geoJson(na_0, {style: function (feature){
-						return {
-							weight: 1,
-							opacity: 0.9,
-							fillOpacity: 0.9,
-							color: '#000000',
-							fillColor: '#ffffff',
-						};}}).bindPopup(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).bindTooltip(function (layer){
-							return "<div style=text-align:center><h4>CLAVE AGEB Urbana: " + layer.feature.properties.CVEGEO +
-							   "</div><hr><table><tr><td>ITSE 2010-2020 : " + layer.feature.properties.CLAS_GD +
-							   "</td></tr><tr><td>Sumatoria ITSE 2010-2020: " + layer.feature.properties.GD +
-							   "</td></tr><tr><td>Valor Población Total: " + layer.feature.properties.PT_GD +
-							   "</td></tr><tr><td>Valor Población 0-4 años: " + layer.feature.properties.PN_GD +
-							   "</td></tr><tr><td>Valor Población 64 años y más: " + layer.feature.properties.PM_GD +
-							   "</td></tr><tr><td>Valor Promedio de hijos: " + layer.feature.properties.PF_GD +   
-							   "</td></tr><tr><td>Valor Grado de Escolaridad: " + layer.feature.properties.GE_GD +
-							   "</td></tr><tr><td>Valor Vivienda Totales por AGEB: " + layer.feature.properties.VT_GD +
-							   "</td></tr><tr><td>Valor Promedio de ocupantes por cuarto: " + layer.feature.properties.OC_GD +
-							   "</td></tr><tr><td>Valor Viviendas con computadora: " + layer.feature.properties.VC_GD +
-							   "</td></tr></table>"
-						}).addTo(map);
-					
-				       let ZM_M = L.geoJson(zm_0m, {style: function (feature){
-						return {
-							weight: 2,
-							opacity: 1,
-							fillOpacity: 0,
-							color: '#9b9b9b',
-							fillColor: '#ffffff',
-						};}}).addTo(map);
-
-				        let ZM = L.geoJson(zm_00, {style: function (feature){
-						return {
-							weight: 5,
-							opacity: 1,
-							fillOpacity: 0,
-							color: '#000000',
-							fillColor: '#ffffff',
-						};}}).addTo(map);
-					// ACTIVAR CAPAS //
-					let baseLayers = {
-							'OpenStreetMap Standard': osm,
-							'OpenStreetMap Humanitarian': hdm,
-							'ESRI Satelital': esrisat,
-							'ESRI Dark Basemap': esrigray,
-						};               
-					let overlays = {
-							"Gentrificación Urbana Fuerte": GU3,
-							"Gentrificación Urbana Media": GU2,
-							"Gentrificación Urbana Ligera": GU1,
-							"Sin Cambios": SC,
-							"Declinación Urbana Ligera": DU1,
-							"Declinación Urbana Media": DU2,
-							"Declinación Urbana Fuerte": DU3,
-							"No Aplica": NA,
-							"Delimitación Zona Metropolitana": ZM,
-							"Delimitación Municipal": ZM_M,
-						};
-					let layerControl = L.control.layers(baseLayers, overlays, {collapsed: false,}).addTo(map);
-					// RESET VIEW (REGRESAR VISTA IN INICIAL) //
-					L.control.resetView({
-	        			position: "topleft",
-	        			title: "Return zoom",
-	       				latlng: L.latLng([19.50, -99.15]),
-	        			zoom: 10,
-   					}).addTo(map);
-				</script>
+				<script type="text/javascript" src="./Tematizacion/Map_ITSE_2020.js"></script>
 		</section>
 	</body>
 </html>
